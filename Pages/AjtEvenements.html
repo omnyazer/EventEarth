@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un évènement</title>
+</head>
+<body>
+
+ <!-- Header de la page avec le logo et la barre de navigation -->    <header>
+        <div>
+            <div>
+                <img src="../Images/Image2.jpg" alt="Logotype" />
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td><a href="../pages/Acceuil.html">Acceuil</a></td>
+                        <td><a href="../pages/Evenements.html">Les évènements</a></td>
+                        <td><a href="../pages/Contact.html">Nous contacter</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section "Ajouter un évènement" -->
+    <h1>Ajouter un évènement</h1>
+
+    <form action="submit-event.html" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="titre">Titre de l'évènement :</label>
+            <input type="text" id="titre" name="titre" required>
+        </div>
+
+        <div>
+            <label for="description">Description de l'évènement :</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+
+        <div>
+            <label for="photo">Photo de l'évènement :</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+        </div>
+
+        <div>
+            <label for="prix">Prix de l'évènement (€) :</label>
+            <input type="number" id="prix" name="prix" required>
+        </div>
+
+        <div>
+            <button type="submit">Créer l'évènement</button>
+        </div>
+    </form>
+
+    <!-- Footer avec des liens vers les mentions légales et les conditions générales d'utilisation -->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <a href="mentions-legales.html">Mentions légales</a> |
+                    <a href="conditions-utilisation.html">Conditions générales d'utilisation</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
